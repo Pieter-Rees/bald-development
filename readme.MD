@@ -1,6 +1,6 @@
 # Online Identity
 
-This is my online identity a.k.a. my portfolio page without projects.
+Bald Development - BLD - est. 2017
 
 ## Getting Started
 
