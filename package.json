@@ -12,17 +12,18 @@
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^7.1.6",
-    "commitizen": "^2.9.6",
-    "cz-conventional-changelog": "^2.0.0",
-    "husky": "^0.14.3",
-    "lint-staged": "^5.0.0",
-    "prettier": "1.8.2",
-    "stylelint": "8.2.0",
     "babel-brunch": "~6.1",
     "babel-preset-latest": "^6",
     "browser-sync-brunch": "0.0.9",
     "brunch": "^2",
     "clean-css-brunch": "^2",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "handlebars-brunch": "^2.10.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^5.0.0",
+    "prettier": "1.8.2",
+    "stylelint": "8.2.0",
     "uglify-js-brunch": "^2"
   }
 }

@@ -45,6 +45,7 @@ node_modules/
 /tasks/**/*
 bower_components/
 .sass-cache
+/public/
 
 # Node Cache #
 ##############
