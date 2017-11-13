@@ -1,34 +1,28 @@
 {
-	"name": "PieterR",
-	"version": "0.6.0",
-	"description": "Bald Development main page",
-	"main": "index.html",
-	"repository": {
-		"url": "https://github.com/Pieter-Rees/online-identity",
-		"type": "git"
-	},
-	"config": {
-		"port": "4200",
-		"commitizen": {
-			"path": "./node_modules/cz-conventional-changelog"
-		}
-	},
-	"scripts": {
-		"start": "webpack-dev-server",
-		"build": "webpack -p",
-		"precommit": "lint-staged",
-		"prepush": "npm test"
-	},
-	"author": "Pieter Rees <pieter@pieterrees.nl>",
-	"license": "MIT",
-	"dependencies": {},
-	"devDependencies": {
-		"autoprefixer": "^6.7.6",
-		"commitizen": "^2.9.6",
-		"cz-conventional-changelog": "^2.0.0",
-		"husky": "^0.14.3",
-		"lint-staged": "^4.3.0",
-		"prettier": "1.7.4",
-		"stylelint": "8.2.0"
+  "name": "brunch-app",
+  "description": "Brunch.io application",
+  "private": true,
+  "author": "Brunch",
+  "version": "0.0.1",
+  "repository": "",
+  "scripts": {
+    "start": "brunch watch --server",
+    "build": "brunch build --production"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^5.0.0",
+    "prettier": "1.8.2",
+    "stylelint": "8.2.0",
+    "babel-brunch": "~6.1",
+    "babel-preset-latest": "^6",
+    "browser-sync-brunch": "0.0.9",
+    "brunch": "^2",
+    "clean-css-brunch": "^2",
+    "uglify-js-brunch": "^2"
   }
 }
