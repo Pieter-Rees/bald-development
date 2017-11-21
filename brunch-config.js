@@ -11,4 +11,6 @@ exports.files = {
 
 exports.plugins = {
   babel: {presets: ['latest']},
+  sass: {sourceMapEmbed: true},
+  postcss: {processors: [require('autoprefixer')]}
 };
