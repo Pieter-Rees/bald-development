@@ -1,0 +1,10 @@
+html, body {
+
+}
+
+
+section {
+  &:nth-child(1) {
+    background-color: red;
+  }
+}
