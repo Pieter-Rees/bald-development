@@ -4,9 +4,8 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div className="nice">
-        Test
-      </div>
+      <header className="header">
+      </header>
     );
   }
 };
