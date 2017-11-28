@@ -7,7 +7,7 @@ class About extends React.Component {
     return (
       <section className="section about">
       <Title
-        text="Test">About</Title>
+        text="Test"></Title>
       </section>
     );
   }
