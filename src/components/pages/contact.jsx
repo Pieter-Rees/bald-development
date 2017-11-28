@@ -5,9 +5,11 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <section className="section contact">
-        <Title
-          text="Contact"></Title>
+      <section className="section contact" id="section-contact">
+        <div className="content">
+          <Title
+            text="Contact"></Title>
+        </div>
       </section>
     );
   }

@@ -1,28 +1,36 @@
 import React, { } from 'react';
 import styled from 'styled-components';
 
-const NavigationList = styled.nav`
-  border-radius: 3px;
-  padding: 0.25em 1em;
-  margin: 0 1em;
-  background: transparent;
-  color: palevioletred;
-  border: 2px solid $steel;
+const Nav = styled.nav`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $steel;
+  flex: 1;
 `;
 
-class Navigation extends React.Component {
+const NavList = styled.ul`
+  display: flex;
+  flex-direction: row;
+`;
+
+const NavListItem = styled.li`
+  list-style: none;
+`;
+
+class SNavigation extends React.Component {
 
   render() {
     return (
-      <NavigationList className='navigation'>
-        <ul className='navigation-list'>
-          <li>About</li>
-          <li>Work</li>
-          <li>Contact</li>
-        </ul>
-      </NavigationList>
+      <Nav className='navigation'>
+        <NavList className='navigation-list'>
+          <NavListItem>About</NavListItem>
+          <NavListItem>Work</NavListItem>
+          <NavListItem>Contact</NavListItem>
+        </NavList>
+      </Nav>
     );
   }
 };
 
-export default Navigation;
+export default SNavigation;

@@ -5,9 +5,11 @@ class Work extends React.Component {
 
   render() {
     return (
-      <section className="section work">
-        <Title
-          text="About"></Title>
+      <section className="section work" id="section-work">
+        <div className="content">
+          <Title
+            text="About"></Title>
+        </div>
       </section>
     );
   }
