@@ -1,14 +1,11 @@
 import React, { } from 'react';
-import Button from './modules/button.jsx';
+import Navigation from './modules/organisms/navigation.jsx';
 
 class Header extends React.Component {
-
   render() {
     return (
       <header className="header">
-        <Button>
-          TEST
-        </Button>
+        <Navigation></Navigation>
       </header>
     );
   }

@@ -1,5 +1,5 @@
 import React, { } from 'react';
-import Title from '../modules/title.jsx';
+import Title from '../modules/atoms/title.jsx';
 
 class Contact extends React.Component {
 
