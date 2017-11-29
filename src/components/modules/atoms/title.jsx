@@ -1,4 +1,4 @@
-import React, { } from 'react';
+import React from 'react';
 
 function Title(props) {
   return <h2>{props.text}</h2>;
