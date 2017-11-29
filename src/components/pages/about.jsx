@@ -1,7 +1,6 @@
 import React, { } from 'react';
 import Title from '../modules/atoms/title.jsx';
 import Paragraph from '../modules/atoms/paragraph.jsx';
-import '../../App.scss';
 
 class About extends React.Component {
 

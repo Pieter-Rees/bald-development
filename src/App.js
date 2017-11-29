@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './App.scss';
 import Footer from './components/footer.jsx';
 import Header from './components/header.jsx';
 import Main from './components/main.jsx';
+import Global from './components/global.jsx';
 
 class App extends Component {
   render() {

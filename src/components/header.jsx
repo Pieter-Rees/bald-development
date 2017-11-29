@@ -2,7 +2,6 @@ import React, { } from 'react';
 import Navigation from './modules/organisms/navigation.jsx';
 import Social from './modules/organisms/social.jsx';
 import styled from 'styled-components';
-import '../App.scss';
 
 const SHeader = styled.header`
   width: 100%;
