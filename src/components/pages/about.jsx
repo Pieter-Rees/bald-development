@@ -1,4 +1,6 @@
 import React, { } from 'react';
+import styled from 'styled-components';
+
 import Title from '../modules/atoms/title.jsx';
 import Paragraph from '../modules/atoms/paragraph.jsx';
 
@@ -13,7 +15,6 @@ class About extends React.Component {
           <Paragraph text="Short ribs ham hock prosciutto short loin t-bone picanha jowl. Strip steak hamburger ham kielbasa chuck capicola turkey pig andouille cow prosciutto kevin short loin tongue. Drumstick brisket cow buffalo jerky. Shankle pastrami jerky short ribs cow cupim pancetta tri-tip frankfurter salami ground round t-bone drumstick meatball. Hamburger pork loin chuck biltong strip steak cupim pork belly pancetta.">
           </Paragraph>
         </div>
-
       </section>
     );
   }

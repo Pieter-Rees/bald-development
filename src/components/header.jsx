@@ -2,13 +2,13 @@ import React, { } from 'react';
 import Navigation from './modules/organisms/navigation.jsx';
 import Social from './modules/organisms/social.jsx';
 import styled from 'styled-components';
+import Global from './global.jsx';
 
 const SHeader = styled.header`
-  width: 100%;
   display: grid;
   grid-template-columns: 10% auto 10%;
   padding: 20px;
-  background-color: $steel;
+  background-color: ${props => props.theme.colors.primary};
 }
 `;
 
@@ -28,12 +28,12 @@ const SNavigation = styled.div`
 class Header extends React.Component {
   render() {
     return (
-      <SHeader className="header">
-        <SHeaderContainer className="header-container">
-          <Navigation></Navigation>
-          <Social></Social>
-        </SHeaderContainer>
-      </SHeader>
+        <SHeader className="header">
+          <SHeaderContainer className="header-container">
+            <Navigation></Navigation>
+            <Social></Social>
+          </SHeaderContainer>
+        </SHeader>
     );
   }
 };

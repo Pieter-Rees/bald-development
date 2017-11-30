@@ -1,5 +1,5 @@
 import React, { } from 'react';
-import styled from 'styled-components';x
+import styled from 'styled-components';
 
 const Button = styled.button`
   border-radius: 3px;
@@ -7,7 +7,7 @@ const Button = styled.button`
   margin: 0 1em;
   background: transparent;
   color: palevioletred;
-  border: 2px solid $steel;
+  border: 2px solid pri;
 `;
 
 export default Button;

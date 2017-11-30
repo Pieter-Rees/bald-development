@@ -5,7 +5,7 @@ const Nav = styled.nav`
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: $steel;
+  background-color: ${props => props.theme.primary};
   flex: 1;
 `;
 

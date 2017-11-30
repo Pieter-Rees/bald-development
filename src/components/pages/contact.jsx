@@ -1,4 +1,6 @@
 import React, { } from 'react';
+import styled from 'styled-components';
+
 import Title from '../modules/atoms/title.jsx';
 
 class Contact extends React.Component {
