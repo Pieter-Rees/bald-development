@@ -1,4 +1,5 @@
 import React, { } from 'react';
+import Global from './global.jsx';
 import styled, {ThemeProvider} from 'styled-components';
 import About from './pages/about.jsx';
 import Contact from './pages/contact.jsx';
