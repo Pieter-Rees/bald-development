@@ -19,9 +19,6 @@ class Social extends React.Component {
     return (
       <SSocial className='social'>
         <SocialList className='social-list'>
-          <SocialListItem><FaBeer /></SocialListItem>
-          <SocialListItem><FaBeer /></SocialListItem>
-          <SocialListItem><FaBeer /></SocialListItem>
         </SocialList>
       </SSocial>
     );

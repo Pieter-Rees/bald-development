@@ -5,6 +5,8 @@ const LogoS = styled.h1`
   text-align: center;
   font-size: 250px;
   margin: 0;
+  font-family: 'Atomic Age';
+
 `;
 
 function Logo(props) {

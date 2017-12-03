@@ -9,7 +9,7 @@ const SHeader = styled.header`
   position: fixed;
   width: 100%;
   grid-template-columns: 10% auto 10%;
-  background-color: ${props => props.theme.colors.primary};
+  //background-color: ${props => props.theme.colors.primary};
 }
 `;
 
@@ -19,7 +19,7 @@ const SHeaderContainer = styled.div`
   padding: 1rem;
   flex: 1;
   display: flex;
-  justify-self: flex-end;
+  justify-self: flex-start;
 `;
 
 const SNavigation = styled.div`
@@ -32,7 +32,7 @@ class Header extends React.Component {
         <SHeader className="header">
           <SHeaderContainer className="header-container">
             <Navigation></Navigation>
-            <Social></Social>
+
           </SHeaderContainer>
         </SHeader>
     );
