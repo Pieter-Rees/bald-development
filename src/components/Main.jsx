@@ -1,9 +1,9 @@
 import React, { } from 'react';
-import Global from './global.jsx';
 import styled, {ThemeProvider} from 'styled-components';
-import About from './pages/about.jsx';
-import Contact from './pages/contact.jsx';
-import Work from './pages/work.jsx';
+import Global from './Global.jsx';
+import About from './pages/About.jsx';
+import Contact from './pages/Contact.jsx';
+import Work from './pages/Work.jsx';
 
 class Main extends React.Component {
 

@@ -1,3 +1,5 @@
+//Not used right now
+
 import React, { } from 'react';
 import styled from 'styled-components';
 import FaBeer from 'react-icons/lib/fa/beer';

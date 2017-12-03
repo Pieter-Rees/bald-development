@@ -1,8 +1,8 @@
 import React, { } from 'react';
-import Navigation from './modules/organisms/navigation.jsx';
-import Social from './modules/organisms/social.jsx';
+import Global from './Global.jsx';
+import Navigation from './modules/organisms/Navigation.jsx';
+import Social from './modules/organisms/Social.jsx';
 import styled from 'styled-components';
-import Global from './global.jsx';
 
 const SHeader = styled.header`
   display: grid;

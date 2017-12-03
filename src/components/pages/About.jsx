@@ -1,10 +1,10 @@
 import React, { } from 'react';
 import styled from 'styled-components';
 
-import Title from '../modules/atoms/title.jsx';
-import Paragraph from '../modules/atoms/paragraph.jsx';
+import Title from '../modules/atoms/Title.jsx';
+import Paragraph from '../modules/atoms/Paragraph.jsx';
 
-import Logo from '../modules/atoms/logo.jsx';
+import Logo from '../modules/atoms/Logo.jsx';
 
 class About extends React.Component {
 

@@ -1,7 +1,7 @@
 import React, { } from 'react';
 import styled from 'styled-components';
 
-import Title from '../modules/atoms/title.jsx';
+import Title from '../modules/atoms/Title.jsx';
 
 class Contact extends React.Component {
 

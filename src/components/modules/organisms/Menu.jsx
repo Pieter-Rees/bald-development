@@ -10,20 +10,7 @@ const Nav = styled.nav`
 `;
 
 const Burger = styled.svg`
-  height: 36px;
-
-  // .top-bun {
-  //   fill:red;
-  // }
-  //
-  // .meat {
-  //   fill: white;
-  // }
-  //
-  // .bottom-bun {
-  //   fill: blue;
-  //
-  // }
+  
 `;
 
 
