@@ -10,17 +10,26 @@ body, html {
     outline: 1px solid red;
   }
 }
+
 .section {
-  height: 100vh;
+  min-height: 75vh;
   display: grid;
   grid-template-columns: 10% auto 10%;
-  padding: 20px;
 }
 
 .content {
   grid-column-start: 2;
   grid-column-end: 2;
-  padding: 1rem;
   flex: 1;
+  font-family: Nunito Sans;
+}
+
+.about {
+  .content {
+    margin-top: 87px; //Navbar Fix
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 `
