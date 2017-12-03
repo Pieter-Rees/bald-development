@@ -6,8 +6,9 @@ import Global from './global.jsx';
 
 const SHeader = styled.header`
   display: grid;
+  position: fixed;
+  width: 100%;
   grid-template-columns: 10% auto 10%;
-  padding: 20px;
   background-color: ${props => props.theme.colors.primary};
 }
 `;
