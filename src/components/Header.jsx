@@ -22,10 +22,6 @@ const SHeaderContainer = styled.div`
   justify-self: flex-start;
 `;
 
-const SNavigation = styled.div`
-  flex: 1;
-`;
-
 class Header extends React.Component {
   render() {
     return (
