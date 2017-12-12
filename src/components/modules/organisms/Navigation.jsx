@@ -7,7 +7,7 @@ import Menu from '../organisms/Menu';
 class Navigation extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {isToggleOn: true};
+    this.state = {isToggleOn: false};
     // This binding is necessary to make `this` work in the callback
     this.handleClick = this.handleClick.bind(this);
   }
