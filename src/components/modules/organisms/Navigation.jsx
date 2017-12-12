@@ -25,7 +25,7 @@ class Navigation extends React.Component {
   render() {
     return(
       <div>
-        <Button />
+        <Button onClick={this.handleClick} />
         <Menu />
       </div>
     )

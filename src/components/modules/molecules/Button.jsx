@@ -5,10 +5,6 @@ const SBurger = styled.svg`
   width: 50px;
 `;
 
-
-const Burger = styled.button`
-`;
-
 class Button extends React.Component {
   render() {
     return (
