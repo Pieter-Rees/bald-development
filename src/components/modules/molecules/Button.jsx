@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 const SBurger = styled.svg`
   width: 50px;
+  position: relative;
+  z-index: 1;
 `;
 
 class Button extends React.Component {

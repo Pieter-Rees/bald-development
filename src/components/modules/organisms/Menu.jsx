@@ -1,14 +1,24 @@
 import React, { } from 'react';
 import styled from 'styled-components';
 
+const SMenu = styled.div`
+  position: fixed;
+  width: 100%;
+  height: 100%;
 
-class SNavigation extends React.Component {
+  left: 0;
+  top: 0;
+  background-color: red;
+`;
+
+class Menu extends React.Component {
 
   render() {
     return (
-      'hi'
-    )
+      <SMenu>
+      </SMenu>
+    );
   }
 };
 
-export default SNavigation;
+export default Menu;
