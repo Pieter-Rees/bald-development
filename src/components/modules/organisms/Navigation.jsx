@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from '../molecules/Button';
+import Menu from '../organisms/Menu';
+
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -22,7 +24,10 @@ class Navigation extends React.Component {
 
   render() {
     return(
-      <div> <Button /></div>
+      <div>
+        <Button />
+        <Menu />
+      </div>
     )
   }
 }
