@@ -13,30 +13,26 @@ class Navigation extends React.Component {
   }
 
   handleClick() {
-    console.log('lol');
-    debugger
-
     this.setState(prevState => ({
       isToggleOn: !prevState.isToggleOn
     }));
-
-    let a = 'piet';
-    if(a) {
-    }
   }
 
   render() {
     let isToggleOn = this.state.isToggleOn;
     return(
       <div>
-        <div onClick={this.handleClick}>
-          <Button></Button>
-        </div>
-
-        {isToggleOn ? (
-          <Menu />
-      ) : (null)}
+        <div className="">BLD</div>
       </div>
+      // <div>
+      //   <div onClick={this.handleClick}>
+      //     <Button></Button>
+      //   </div>
+      //
+      //   {isToggleOn ? (
+      //     <Menu />
+      // ) : (null)}
+      // </div>
     )
   }
 }

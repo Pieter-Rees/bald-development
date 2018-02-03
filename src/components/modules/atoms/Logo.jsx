@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const LogoS = styled.h1`
   text-align: center;
-  font-size: 250px;
+  font-size: 10em;
   margin: 0;
   font-family: 'Atomic Age';
 
