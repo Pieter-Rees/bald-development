@@ -6,6 +6,7 @@ const LogoS = styled.h1`
   font-size: 10em;
   margin: 0;
   font-family: 'Atomic Age';
+  color: ${props => props.theme.colors.color3};
 
 `;
 
