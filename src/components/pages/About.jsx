@@ -12,14 +12,20 @@ const SSection = styled.header`
 }
 `;
 
+const DDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+}
+`;
+
 class About extends React.Component {
   render() {
     return (
       <SSection className="section about" id="section-about">
-        <div className="content">
+        <DDiv className="content">
           <Logo text="BLD."></Logo>
           <Wallpaper></Wallpaper>
-        </div>
+        </DDiv>
       </SSection>
     );
   }

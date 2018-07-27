@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const LogoS = styled.h1`
   text-align: center;
-  font-size: 10em;
+  font-size: 2em;
   margin: 0;
   font-family: 'Atomic Age';
   color: ${props => props.theme.colors.color3};
