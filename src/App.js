@@ -7,11 +7,12 @@ import Main from './components/Main.jsx';
 const theme = {
   colors: {
     /* Coolors Exported Palette - coolors.co/2b303a-92dce5-eee5e9-7c7c7c-d64933 */
-    color1: 'rgba(43, 48, 58, 1)',
-    color2: 'rgba(146, 220, 229, 1)',
-    color3: 'rgba(238, 229, 233, 1)',
-    color4: 'rgba(124, 124, 124, 1)',
-    color5: 'rgba(214, 73, 51, 1)',
+    color1: '#61892f',
+    color2: '#86c232',
+    color3: '#222629',
+    color4: '#373b4f',
+    color5: '#6b6e70',
+    color6: '#fff',
   },
 };
 

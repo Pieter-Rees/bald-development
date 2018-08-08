@@ -2,7 +2,7 @@
 
 import React, { } from 'react';
 import styled from 'styled-components';
-import FaBeer from 'react-icons/lib/fa/beer';
+// import FaBeer from 'react-icons/lib/fa/beer';
 
 const SSocial = styled.div`
   flex: 1;

@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from '../molecules/Button';
-import Menu from '../organisms/Menu';
-
+import NavigationMenu from '../organisms/Navigation-menu';
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -21,18 +20,7 @@ class Navigation extends React.Component {
   render() {
     let isToggleOn = this.state.isToggleOn;
     return(
-      <div>
-        <div className="">BLD</div>
-      </div>
-      // <div>
-      //   <div onClick={this.handleClick}>
-      //     <Button></Button>
-      //   </div>
-      //
-      //   {isToggleOn ? (
-      //     <Menu />
-      // ) : (null)}
-      // </div>
+      <NavigationMenu/>
     )
   }
 }

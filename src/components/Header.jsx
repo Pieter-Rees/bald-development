@@ -10,13 +10,14 @@ const SHeader = styled.header`
   width: 100%;
   grid-template-columns: 10% auto 10%;
   background-color: ${props => props.theme.colors.color3};
+  z-index: 5;
 }
 `;
 
 const SHeaderContainer = styled.div`
   grid-column-start: 2;
   grid-column-end: 2;
-  padding: 1rem;
+  padding: .5em;
   flex: 1;
   display: flex;
   justify-self: flex-start;
@@ -28,7 +29,6 @@ class Header extends React.Component {
         <SHeader className="header">
           <SHeaderContainer className="header-container">
             <Navigation></Navigation>
-
           </SHeaderContainer>
         </SHeader>
     );

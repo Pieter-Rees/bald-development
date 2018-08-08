@@ -7,26 +7,34 @@ html {
 
 body, html {
   * {
-    outline: 1px solid red;
   }
 }
 
+main {
+  position: relative;
+}
+
 .section {
-  min-height: 75vh;
   display: grid;
-  grid-template-columns: 10% auto 10%;
+  grid-template-columns: 5% auto 5%;
+}
+
+.intro {
+  min-height: 100vh;
+
 }
 
 .content {
+  position: relative;
+  z-index: 1
   grid-column-start: 2;
   grid-column-end: 2;
   flex: 1;
   font-family: Nunito Sans;
 }
 
-.about {
+.intro {
   .content {
-    margin-top: 87px; //Navbar Fix
     display: flex;
     justify-content: center;
     align-items: center;
