@@ -4,26 +4,36 @@ section {
   grid-template-columns: 10% auto 10%;
 
   &.intro {
-    background: linear-gradient(to right, #a8ff78, #78ffd6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: linear-gradient(
+      to right,
+      #a8ff78,
+      #78ffd6
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     .section-content {
       align-items: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
 
-      h1, h2, h3 {
-        margin-top:0;
+      h1,
+      h2,
+      h3 {
+        margin-top: 0;
       }
 
       .nav-down {
-        margin: 5em 0 0 0;
+        margin: 5em 0 0;
       }
     }
   }
 
   &.about {
-    background: linear-gradient(to right, #ee9ca7, #ffdde1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(
+      to right,
+      #ee9ca7,
+      #ffdde1
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     .section-content {
       display: flex;
@@ -33,22 +43,25 @@ section {
   }
 
   &.work {
-    background: linear-gradient(to right, #544a7d, #ffd452); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: linear-gradient(
+      to right,
+      #544a7d,
+      #ffd452
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     .section-content {
       display: flex;
       justify-content: center;
       flex-direction: column;
-
     }
   }
 
   &.contact {
+
     .section-content {
       display: flex;
       justify-content: center;
       flex-direction: column;
-      
     }
   }
 
@@ -56,4 +69,3 @@ section {
     grid-column-start: 2;
   }
 }
-
