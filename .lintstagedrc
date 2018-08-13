@@ -4,6 +4,9 @@
       "prettier --write",
       "git add"
     ],
+    "**/*.hbs": [
+      "git add"
+    ],
     "**/*.scss": [
       "prettier --parser postcss --write",
       "stylelint --syntax=scss --fix",
