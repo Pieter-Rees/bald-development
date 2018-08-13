@@ -1,21 +1,53 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
 
-# dependencies
-/node_modules
+# History #
+###########
+.node_repl_history
 
-# testing
-/coverage
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
 
-# production
-/build
-
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
+# Logs & Databases #
+####################
+logs
+*.log
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+*.sql
+*.sqlite
+
+# Os Generated #
+################
+.DS_Store
+.DS_Store?
+._*
+.Trashes
+ehthumbs.db
+Thumbs.db.
+
+# Compiled #
+############
+/temp/**/*
+/tmp/**/*
+/dist/**/*
+/build/**/*
+*.css.map
+
+# Structure #
+#############
+node_modules/
+/tasks/**/*
+bower_components/
+.sass-cache
+
+# Node Cache #
+##############
+.npm
+/gulpfile.js~
+/readme.md~
