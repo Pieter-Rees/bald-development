@@ -23,6 +23,7 @@
 		"ityped": "^1.0.1",
 		"jquery": "latest",
 		"normalize.css": "^8.0.0",
+		"scrollmagic": "^2.0.5",
 		"svg.js": "^2.6.4"
 	},
 	"devDependencies": {
