@@ -24,7 +24,7 @@ section {
   }
 
   .btn:after {
-    content: '';
+    content: "";
     position: absolute;
     z-index: -1;
     -webkit-transition: all 0.3s;
@@ -35,35 +35,35 @@ section {
   .btn-1f {
     overflow: hidden;
   }
-  
+
   .btn-1f:after {
     width: 101%;
     height: 0;
     top: 50%;
     left: 50%;
-    background: #fff;
+    background: #ffffff;
     opacity: 0;
     -webkit-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
   }
-  
+
   .btn-1f:hover,
   .btn-1f:active {
     color: #0e83cd;
   }
-  
+
   .btn-1f:hover:after {
     height: 75%;
     opacity: 1;
   }
-  
+
   .btn-1f:active:after {
     height: 130%;
     opacity: 1;
   }
-  
+
   &.intro {
     background: linear-gradient(
       to right,
@@ -87,6 +87,7 @@ section {
         margin: 5em 0 0;
 
         svg {
+
           path {
             fill: $color-ui-grey;
           }
@@ -124,6 +125,7 @@ section {
   }
 
   &.contact {
+
     .section-content {
       display: flex;
       justify-content: center;
