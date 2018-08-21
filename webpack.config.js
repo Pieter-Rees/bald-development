@@ -22,7 +22,7 @@ module.exports = {
         test: /\.scss$/,
         use: [
           'style-loader',
-          { loader: 'css-loader', options: { importLoaders: 1 } },
+          { loader: 'css-loader', options: { importLoaders: 1, url: false } },
           'postcss-loader',
           'sass-loader',
         ],
@@ -46,7 +46,7 @@ module.exports = {
     }),
 
     new CopyWebpackPlugin([
-      { from: 'src/assets/images/**/*', to: 'assets/img', flatten: true },
+      { from: 'src/assets/images/**/*', to: 'assets/img', flatten: false },
     ]),
 
     new CopyWebpackPlugin([

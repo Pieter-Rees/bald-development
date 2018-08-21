@@ -1,20 +1,57 @@
+body {
+  background-color: $color-base-grey;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+
+}
+
+.navigation {
+  color: $color-base;
+
+  &__list {
+    padding-left: 0;
+    display: flex;
+
+    &--list-item {
+      list-style: none;
+      padding: .4em 1em;
+
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+.page-logo {
+  display: flex;
+  align-items: center;
+  padding: .4em 0 .4em 1em;
+  color: $color-base;
+}
+
 section {
-  height: 100vh;
   display: grid;
-  grid-template-columns: 10% auto 10%;
+  .section-content {
+    margin: 0 1em;
+    background-color: $color-base;
+  }
 
   &.intro {
-    background: linear-gradient(
-      to right,
-      #a8ff78,
-      #78ffd6
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url('http://www.wallpapers-web.com/data/out/205/5615949-urban-landscape-wallpapers.jpg');
 
     .section-content {
       align-items: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      padding: 10em 0;
+      background-color: $color-base;
 
       h1,
       h2,
@@ -24,48 +61,48 @@ section {
 
       .nav-down {
         margin: 5em 0 0;
+
+        path {
+          fill: $color-base-grey;
+        }
       }
     }
   }
 
   &.about {
-    background: linear-gradient(
-      to right,
-      #ee9ca7,
-      #ffdde1
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    grid-template-columns: 50% 50%;
 
     .section-content {
+      margin-right: 0;
+      padding: 5em .5em;
       display: flex;
       justify-content: center;
       flex-direction: column;
+      background-color: $color-base;
     }
   }
 
   &.work {
-    background: linear-gradient(
-      to right,
-      #544a7d,
-      #ffd452
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    grid-template-columns: 50% 50%;
 
     .section-content {
+      grid-column-start: 2;
+      margin-left: 0;
+      padding: 5em .5em;
       display: flex;
       justify-content: center;
       flex-direction: column;
+      background-color: $color-base;
     }
   }
 
   &.contact {
-
     .section-content {
+      padding: .5em;
       display: flex;
       justify-content: center;
       flex-direction: column;
+      background-color: $color-base;
     }
-  }
-
-  .section-content {
-    grid-column-start: 2;
   }
 }
