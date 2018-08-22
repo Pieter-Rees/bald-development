@@ -1,19 +1,29 @@
+html,
 body {
-  background-color: $color-base-grey;
+  width: 100%;
 }
 
+body {
+  background-color: $color-base-grey;
+  webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
 
 header {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
-
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: $color-base-grey;
 }
 
 .navigation {
   color: $color-base;
   display: flex;
   align-items: center;
+  padding-left: 1em;
 
   &__list {
     padding-left: 0;
@@ -21,7 +31,7 @@ header {
 
     &--list-item {
       list-style: none;
-      padding: .4em 1em;
+      padding: 0.4em 1em;
 
       &:first-child {
         padding-left: 0;
@@ -31,13 +41,15 @@ header {
 }
 
 .page-logo {
-  padding: .4em 0 .4em 1em;
+  padding: 0.4em 1em;
+
   svg {
     width: 50px;
     height: 50px;
+
     .st0 {
       fill: none;
-      stroke: #FF7BAC;
+      stroke: #ff7bac;
       stroke-width: 40;
       stroke-miterlimit: 10;
     }
@@ -53,12 +65,12 @@ header {
 
 section {
   display: grid;
+
   .section-content {
     margin: 0 1em;
   }
 
   &.intro {
-    background-image: url('http://www.wallpapers-web.com/data/out/205/5615949-urban-landscape-wallpapers.jpg');
 
     .section-content {
       align-items: center;
@@ -76,16 +88,18 @@ section {
 
       .nav-down {
         margin: 5em 0 0;
+
         svg {
           width: 50px;
           height: 50px;
+
           .st0 {
             fill: none;
-            stroke: #FF7BAC;
+            stroke: #ff7bac;
             stroke-width: 40;
             stroke-miterlimit: 10;
           }
-      
+
           .st1 {
             fill: none;
             stroke: red;
@@ -106,7 +120,7 @@ section {
 
     .section-content {
       margin-right: 0;
-      padding: 15em 1em;
+      padding: 5em 1em;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -114,11 +128,33 @@ section {
       &.left {
         grid-column-start: 1;
         background-color: $color-base;
-        
       }
 
       &.right {
         grid-column-start: 2;
+        color: $color-base;
+      }
+    }
+
+    .summary {
+      padding-left: 0;
+
+      &__list-item {
+        display: flex;
+        margin-bottom: 2em;
+
+        &--image {
+          width: 5em;
+        }
+
+        &--text {
+          margin-left: 2em;
+
+          .title,
+          .text {
+            margin: 0;
+          }
+        }
       }
     }
   }
@@ -138,12 +174,40 @@ section {
   }
 
   &.contact {
+
     .section-content {
-      padding: .5em;
+      padding: 10em 1em;
       display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
       justify-content: center;
       flex-direction: column;
       background-color: $color-base;
+
+      .process {
+        padding-left: 0;
+        display: flex;
+
+        &__list-item {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          padding: 2em;
+
+          &--image {
+            width: 5em;
+          }
+
+          &--text {
+
+            .title,
+            .text {
+              margin: 0;
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -2,11 +2,17 @@
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
-<path d="M50,40h-8V20h8c5.514,0,10-4.486,10-10S55.514,0,50,0S40,4.486,40,10v8H20v-8c0-5.514-4.486-10-10-10S0,4.486,0,10
-	s4.486,10,10,10h8v20h-8C4.486,40,0,44.486,0,50s4.486,10,10,10s10-4.486,10-10v-8h20v8c0,5.514,4.486,10,10,10s10-4.486,10-10
-	S55.514,40,50,40z M42,10c0-4.411,3.589-8,8-8s8,3.589,8,8s-3.589,8-8,8h-8V10z M10,18c-4.411,0-8-3.589-8-8s3.589-8,8-8
-	s8,3.589,8,8v8H10z M18,50c0,4.411-3.589,8-8,8s-8-3.589-8-8s3.589-8,8-8h8V50z M20,40V20h20v20H20z M50,58c-4.411,0-8-3.589-8-8v-8
-	h8c4.411,0,8,3.589,8,8S54.411,58,50,58z"/>
+<path style="fill:#E7ECED;" d="M51.2,60H8.8C3.94,60,0,56.06,0,51.2V8.8C0,3.94,3.94,0,8.8,0H51.2C56.06,0,60,3.94,60,8.8V51.2
+	C60,56.06,56.06,60,51.2,60z"/>
+<path style="fill:none;stroke:#AFB6BB;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;" d="M25,25h-4.5
+	c-2.485,0-4.5-2.015-4.5-4.5v0c0-2.485,2.015-4.5,4.5-4.5h0c2.485,0,4.5,2.015,4.5,4.5V25z"/>
+<rect x="25" y="25" style="fill:none;stroke:#AFB6BB;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;" width="11" height="11"/>
+<path style="fill:none;stroke:#AFB6BB;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;" d="M20.5,45L20.5,45
+	c-2.485,0-4.5-2.015-4.5-4.5v0c0-2.485,2.015-4.5,4.5-4.5H25v4.5C25,42.985,22.985,45,20.5,45z"/>
+<path style="fill:none;stroke:#AFB6BB;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;" d="M40.5,25H36v-4.5
+	c0-2.485,2.015-4.5,4.5-4.5h0c2.485,0,4.5,2.015,4.5,4.5v0C45,22.985,42.985,25,40.5,25z"/>
+<path style="fill:none;stroke:#AFB6BB;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;" d="M40.5,45L40.5,45
+	c-2.485,0-4.5-2.015-4.5-4.5V36h4.5c2.485,0,4.5,2.015,4.5,4.5v0C45,42.985,42.985,45,40.5,45z"/>
 <g>
 </g>
 <g>
