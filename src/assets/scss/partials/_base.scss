@@ -26,7 +26,7 @@ header {
   padding-left: 1em;
 
   &__list {
-    padding-left: 0;
+    padding-left: 1em;
     display: flex;
 
     &--list-item {
@@ -41,11 +41,10 @@ header {
 }
 
 .page-logo {
-  padding: 0.4em 1em;
+  padding: 0.4em 2em;
 
   svg {
-    width: 50px;
-    height: 50px;
+    width: 60px;
 
     .st0 {
       fill: none;
@@ -67,7 +66,7 @@ section {
   display: grid;
 
   .section-content {
-    margin: 0 1em;
+    margin: 0 2em;
   }
 
   &.intro {
@@ -88,24 +87,11 @@ section {
 
       .nav-down {
         margin: 5em 0 0;
+        transform: rotate(134deg);
 
         svg {
           width: 50px;
           height: 50px;
-
-          .st0 {
-            fill: none;
-            stroke: #ff7bac;
-            stroke-width: 40;
-            stroke-miterlimit: 10;
-          }
-
-          .st1 {
-            fill: none;
-            stroke: red;
-            stroke-width: 40;
-            stroke-miterlimit: 10;
-          }
         }
 
         path {
@@ -144,7 +130,11 @@ section {
         margin-bottom: 2em;
 
         &--image {
-          width: 5em;
+          width: 100%;
+          max-width: 4em;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
         }
 
         &--text {
@@ -184,6 +174,7 @@ section {
       justify-content: center;
       flex-direction: column;
       background-color: $color-base;
+      text-align: center;
 
       .process {
         padding-left: 0;
@@ -194,12 +185,17 @@ section {
           display: flex;
           flex-direction: column;
           padding: 2em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
 
           &--image {
             width: 5em;
           }
 
           &--text {
+            margin: 1em 0 0;
 
             .title,
             .text {
@@ -209,5 +205,59 @@ section {
         }
       }
     }
+  }
+}
+
+.footer {
+  display: flex;
+  color: $color-base;
+
+  .footer-logo {
+    margin: 0 2em;
+
+    svg {
+      width: 60px;
+
+      .st0 {
+        fill: none;
+        stroke: #ff7bac;
+        stroke-width: 40;
+        stroke-miterlimit: 10;
+      }
+
+      .st1 {
+        fill: none;
+        stroke: red;
+        stroke-width: 40;
+        stroke-miterlimit: 10;
+      }
+    }
+  }
+}
+
+$color-btn-base: #74ccf4;
+$color-btn-alt: #ffd3f9;
+
+@mixin btn($color: null, $font-size: null) {
+  padding: 0.5em 1em;
+  border: 0.1em solid #74ccf4;
+  color: $color-btn-base;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: "Muli", sans-serif;
+  font-size: $font-size;
+  text-transform: uppercase;
+  border-radius: 1em;
+  transition: 0.1s background ease-in-out;
+  transition: 0.1s color ease-in-out;
+}
+
+.btn {
+  @include btn(#74ccf4, 1em);
+
+  &:hover {
+    background-color: #74ccf4;
+    color: $color-base;
+    font-weight: 600;
   }
 }
