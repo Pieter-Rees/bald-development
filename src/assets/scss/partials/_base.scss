@@ -17,6 +17,7 @@ header {
   width: 100%;
   top: 0;
   background: $color-base-grey;
+  z-index: 1;
 }
 
 .navigation {
@@ -48,14 +49,14 @@ header {
 
     .st0 {
       fill: none;
-      stroke: #ff7bac;
+      stroke: $color-base-green;
       stroke-width: 40;
       stroke-miterlimit: 10;
     }
 
     .st1 {
       fill: none;
-      stroke: red;
+      stroke: white;
       stroke-width: 40;
       stroke-miterlimit: 10;
     }
@@ -70,7 +71,6 @@ section {
   }
 
   &.intro {
-
     .section-content {
       align-items: center;
       display: flex;
@@ -85,6 +85,19 @@ section {
         margin-top: 0;
       }
 
+      .logo {
+        h1 {
+          text-shadow: 0px 2px 0px $color-base-green,
+                       0px 4px 0px $color-base-green,
+                       0px 6px 0px $color-base-grey,
+                       0px 8px 0px $color-base-grey,
+                       0px 10px 0px $color-base-green,
+                       0px 12px 0px $color-base-green,
+                       0px 14px 0px $color-base-grey,
+                       0px 16px 0px $color-base-grey,
+        }
+      }
+
       .nav-down {
         margin: 5em 0 0;
         transform: rotate(134deg);
@@ -95,7 +108,13 @@ section {
         }
 
         path {
-          fill: $color-base-grey;
+          fill: transparent;
+          stroke: $color-base-green;
+          stroke-width: 2px;
+          stroke-dasharray: 160;
+          stroke-dashoffset: 160;
+          animation: dash 5s 1;
+          animation-fill-mode: forwards;
         }
       }
     }
@@ -217,17 +236,17 @@ section {
 
     svg {
       width: 60px;
-
+  
       .st0 {
         fill: none;
-        stroke: #ff7bac;
+        stroke: $color-base-green;
         stroke-width: 40;
         stroke-miterlimit: 10;
       }
-
+  
       .st1 {
         fill: none;
-        stroke: red;
+        stroke: white;
         stroke-width: 40;
         stroke-miterlimit: 10;
       }
