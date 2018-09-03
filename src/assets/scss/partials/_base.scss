@@ -71,6 +71,7 @@ section {
   }
 
   &.intro {
+
     .section-content {
       align-items: center;
       display: flex;
@@ -86,15 +87,13 @@ section {
       }
 
       .logo {
+
         h1 {
           text-shadow: 0px 2px 0px $color-base-green,
-                       0px 4px 0px $color-base-green,
-                       0px 6px 0px $color-base-grey,
-                       0px 8px 0px $color-base-grey,
-                       0px 10px 0px $color-base-green,
-                       0px 12px 0px $color-base-green,
-                       0px 14px 0px $color-base-grey,
-                       0px 16px 0px $color-base-grey,
+            0px 4px 0px $color-base-green, 0px 6px 0px $color-base-grey,
+            0px 8px 0px $color-base-grey, 0px 10px 0px $color-base-green,
+            0px 12px 0px $color-base-green, 0px 14px 0px $color-base-grey,
+            0px 16px 0px $color-base-grey;
         }
       }
 
@@ -236,14 +235,14 @@ section {
 
     svg {
       width: 60px;
-  
+
       .st0 {
         fill: none;
         stroke: $color-base-green;
         stroke-width: 40;
         stroke-miterlimit: 10;
       }
-  
+
       .st1 {
         fill: none;
         stroke: white;
