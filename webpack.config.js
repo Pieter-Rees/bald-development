@@ -22,7 +22,7 @@ module.exports = {
         test: /\.scss$/,
         use: [
           'style-loader',
-          { loader: 'css-loader', options: { importLoaders: 1 } },
+          { loader: 'css-loader', options: { importLoaders: 1, url: false } },
           'postcss-loader',
           'sass-loader',
         ],
@@ -34,6 +34,19 @@ module.exports = {
             loader: 'html-loader',
             options: {
               minimize: false,
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: true, // webpack@1.x
+              disable: true, // webpack@2.x and newer
             },
           },
         ],

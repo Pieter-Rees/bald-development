@@ -1,71 +1,276 @@
-section {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 10% auto 10%;
+html, body { width: 100%;
+}
+
+body { background-color: $color-base-grey;
+  webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+
+  .start-letter { color: $color-base-green;
+    font-weight: 600;
+  }
+}
+
+header { display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: $color-base-grey;
+  z-index: 1;
+}
+
+.navigation { color: $color-base;
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
+
+  a { color: $color-base;
+
+    &:hover { color: $color-base-green;
+    }
+  }
+
+  &__list { padding-left: 1em;
+    display: flex;
+
+    &--list-item { list-style: none;
+      padding: 0.4em 1em;
+
+      &:first-child { padding-left: 0;
+      }
+    }
+  }
+}
+
+.page-logo { padding: 0.4em 2em;
+
+  svg { width: 40px;
+
+    .st0 { fill: none;
+      stroke: $color-base-green;
+      stroke-width: 40;
+      stroke-miterlimit: 10;
+    }
+
+    .st1 { fill: none;
+      stroke: white;
+      stroke-width: 40;
+      stroke-miterlimit: 10;
+    }
+  }
+}
+
+section { display: grid;
+
+  .section-content { margin: 0 2em;
+  }
 
   &.intro {
-    background: linear-gradient(
-      to right,
-      #a8ff78,
-      #78ffd6
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    .section-content {
+    .section-content { align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10em 0;
+      background-color: $color-base;
+
+      h1, h
+      2,
+      h3 { margin-top: 0;
+      }
+
+      .logo {
+
+        h1 { text-shadow: 0px 2px 0px $color-base-green,
+            0px 4px 0px $color-base-green, 0px 6px 0px $color-base-green;
+        }
+      }
+
+      .nav-down { margin: 5em 0 0;
+        transform: rotate(134deg);
+
+        svg { width: 50px;
+          height: 50px;
+        }
+
+        path { fill: transparent;
+          stroke: $color-base-green;
+          stroke-width: 2px;
+          stroke-dasharray: 160;
+          stroke-dashoffset: 160;
+          animation: dash 5s 1;
+          animation-fill-mode: forwards;
+        }
+      }
+    }
+  }
+
+  &.what-we-do { grid-template-columns: 50% 50%;
+
+    .section-content { margin-right: 0;
+      padding: 5em 1em;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      &.left { grid-column-start: 1;
+        background-color: $color-base;
+      }
+
+      &.right { grid-column-start: 2;
+        color: $color-base;
+      }
+    }
+
+    .summary { padding-left: 0;
+
+      &__list-item { display: flex;
+        margin-bottom: 2em;
+
+        &--image { width: 100%;
+          max-width: 4em;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        }
+
+        &--text { margin-left: 2em;
+
+          .title, .text { margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.the-man { grid-template-columns: 50% 50%;
+
+    .section-content { grid-column-start: 2;
+      display: flex;
+      padding: 5em 1em;
+      justify-content: center;
+      flex-direction: column;
+
+      picture { display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        img { max-width: 250px;
+          border-radius: 50%;
+        }
+      }
+
+      &.left { grid-column-start: 1;
+        background-color: $color-base;
+      }
+
+      &.right { grid-column-start: 2;
+        color: $color-base;
+      }
+    }
+  }
+
+  &.the-process {
+
+    .section-content { padding: 10em 1em;
+      display: flex;
       align-items: center;
-      display: flex;
       flex-direction: column;
       justify-content: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: $color-base;
+      text-align: center;
 
-      h1,
-      h2,
-      h3 {
-        margin-top: 0;
+      .process { padding-left: 0;
+        display: flex;
+
+        &__list-item { flex: 1;
+          display: flex;
+          flex-direction: column;
+          padding: 2em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+
+          &--image { width: 5em;
+          }
+
+          &--text { margin: 1em 0 0;
+
+            .title, .text { margin: 0;
+            }
+          }
+        }
       }
-
-      .nav-down {
-        margin: 5em 0 0;
-      }
-    }
-  }
-
-  &.about {
-    background: linear-gradient(
-      to right,
-      #ee9ca7,
-      #ffdde1
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    .section-content {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
-  }
-
-  &.work {
-    background: linear-gradient(
-      to right,
-      #544a7d,
-      #ffd452
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    .section-content {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
     }
   }
 
   &.contact {
 
-    .section-content {
+    .section-content { padding: 10em 1em;
       display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
       justify-content: center;
       flex-direction: column;
+      background-color: $color-base;
+      text-align: center;
     }
   }
+}
 
-  .section-content {
-    grid-column-start: 2;
+.footer { display: flex;
+  align-items: center;
+  color: $color-base;
+  padding: 1em 0;
+
+  p { margin: 0;
+  }
+
+  .footer-logo { margin: 0 2em;
+
+    svg { width: 40px;
+
+      .st0 { fill: none;
+        stroke: $color-base-green;
+        stroke-width: 40;
+        stroke-miterlimit: 10;
+      }
+
+      .st1 { fill: none;
+        stroke: white;
+        stroke-width: 40;
+        stroke-miterlimit: 10;
+      }
+    }
+  }
+}
+
+$color-btn-base: #74ccf4;
+$color-btn-alt: #ffd3f9;
+
+@mixin btn($color: null, $font-size: null) { padding: 0.5em 1em;
+  border: 0.1em solid #74ccf4;
+  color: $color-btn-base;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: "Muli", sans-serif;
+  font-size: $font-size;
+  text-transform: uppercase;
+  border-radius: 1em;
+  transition: 0.1s background ease-in-out;
+  transition: 0.1s color ease-in-out;
+}
+
+.btn { @include btn(#74ccf4, 1em);
+
+  &:hover { background-color: #74ccf4;
+    color: $color-base;
+    font-weight: 600;
   }
 }
