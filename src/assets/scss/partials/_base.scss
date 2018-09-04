@@ -1,17 +1,22 @@
-html, body { width: 100%;
+html,
+body {
+  width: 100%;
 }
 
-body { background-color: $color-base-grey;
+body {
+  background-color: $color-base-grey;
   webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
 
-  .start-letter { color: $color-base-green;
+  .start-letter {
+    color: $color-base-green;
     font-weight: 600;
   }
 }
 
-header { display: flex;
+header {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
@@ -21,40 +26,50 @@ header { display: flex;
   z-index: 1;
 }
 
-.navigation { color: $color-base;
+.navigation {
+  color: $color-base;
   display: flex;
   align-items: center;
   padding-left: 1em;
 
-  a { color: $color-base;
+  a {
+    color: $color-base;
 
-    &:hover { color: $color-base-green;
+    &:hover {
+      color: $color-base-green;
     }
   }
 
-  &__list { padding-left: 1em;
+  &__list {
+    padding-left: 1em;
     display: flex;
 
-    &--list-item { list-style: none;
+    &--list-item {
+      list-style: none;
       padding: 0.4em 1em;
 
-      &:first-child { padding-left: 0;
+      &:first-child {
+        padding-left: 0;
       }
     }
   }
 }
 
-.page-logo { padding: 0.4em 2em;
+.page-logo {
+  padding: 0.4em 2em;
 
-  svg { width: 40px;
+  svg {
+    width: 40px;
 
-    .st0 { fill: none;
+    .st0 {
+      fill: none;
       stroke: $color-base-green;
       stroke-width: 40;
       stroke-miterlimit: 10;
     }
 
-    .st1 { fill: none;
+    .st1 {
+      fill: none;
       stroke: white;
       stroke-width: 40;
       stroke-miterlimit: 10;
@@ -62,40 +77,46 @@ header { display: flex;
   }
 }
 
-section { display: grid;
+section {
+  display: grid;
 
-  .section-content { margin: 0 2em;
+  .section-content {
+    margin: 0 2em;
   }
 
   &.intro {
-
-    .section-content { align-items: center;
+    .section-content {
+      align-items: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding: 10em 0;
       background-color: $color-base;
 
-      h1, h
-      2,
-      h3 { margin-top: 0;
+      h1,
+      h2,
+      h3 {
+        margin-top: 0;
       }
 
       .logo {
-
-        h1 { text-shadow: 0px 2px 0px $color-base-green,
+        h1 {
+          text-shadow: 0px 2px 0px $color-base-green,
             0px 4px 0px $color-base-green, 0px 6px 0px $color-base-green;
         }
       }
 
-      .nav-down { margin: 5em 0 0;
+      .nav-down {
+        margin: 5em 0 0;
         transform: rotate(134deg);
 
-        svg { width: 50px;
+        svg {
+          width: 50px;
           height: 50px;
         }
 
-        path { fill: transparent;
+        path {
+          fill: transparent;
           stroke: $color-base-green;
           stroke-width: 2px;
           stroke-dasharray: 160;
@@ -107,74 +128,95 @@ section { display: grid;
     }
   }
 
-  &.what-we-do { grid-template-columns: 50% 50%;
+  &.what-we-do {
+    display: block;
 
-    .section-content { margin-right: 0;
+    @include sm {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+
+    .section-content {
+      margin-right: 0;
       padding: 5em 1em;
       display: flex;
       justify-content: center;
       flex-direction: column;
 
-      &.left { grid-column-start: 1;
+      &.left {
+        grid-column-start: 1;
         background-color: $color-base;
       }
 
-      &.right { grid-column-start: 2;
+      &.right {
+        grid-column-start: 2;
         color: $color-base;
       }
     }
 
-    .summary { padding-left: 0;
+    .summary {
+      padding-left: 0;
 
-      &__list-item { display: flex;
+      &__list-item {
+        display: flex;
         margin-bottom: 2em;
 
-        &--image { width: 100%;
+        &--image {
+          width: 100%;
           max-width: 4em;
           display: flex;
           justify-content: center;
           flex-direction: column;
         }
 
-        &--text { margin-left: 2em;
+        &--text {
+          margin-left: 2em;
 
-          .title, .text { margin: 0;
+          .title,
+          .text {
+            margin: 0;
           }
         }
       }
     }
   }
 
-  &.the-man { grid-template-columns: 50% 50%;
+  &.the-man {
+    grid-template-columns: 50% 50%;
 
-    .section-content { grid-column-start: 2;
+    .section-content {
+      grid-column-start: 2;
       display: flex;
       padding: 5em 1em;
       justify-content: center;
       flex-direction: column;
 
-      picture { display: inline-flex;
+      picture {
+        display: inline-flex;
         align-items: center;
         justify-content: center;
 
-        img { max-width: 250px;
+        img {
+          max-width: 250px;
           border-radius: 50%;
         }
       }
 
-      &.left { grid-column-start: 1;
+      &.left {
+        grid-column-start: 1;
         background-color: $color-base;
       }
 
-      &.right { grid-column-start: 2;
+      &.right {
+        grid-column-start: 2;
         color: $color-base;
       }
     }
   }
 
   &.the-process {
-
-    .section-content { padding: 10em 1em;
+    .section-content {
+      padding: 10em 1em;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -184,10 +226,17 @@ section { display: grid;
       background-color: $color-base;
       text-align: center;
 
-      .process { padding-left: 0;
+      .process {
+        padding-left: 0;
         display: flex;
+        flex-direction: column;
 
-        &__list-item { flex: 1;
+        @include sm {
+          flex-direction: row;
+        }
+
+        &__list-item {
+          flex: 1;
           display: flex;
           flex-direction: column;
           padding: 2em;
@@ -196,12 +245,16 @@ section { display: grid;
           align-items: center;
           text-align: center;
 
-          &--image { width: 5em;
+          &--image {
+            width: 5em;
           }
 
-          &--text { margin: 1em 0 0;
+          &--text {
+            margin: 1em 0 0;
 
-            .title, .text { margin: 0;
+            .title,
+            .text {
+              margin: 0;
             }
           }
         }
@@ -210,8 +263,8 @@ section { display: grid;
   }
 
   &.contact {
-
-    .section-content { padding: 10em 1em;
+    .section-content {
+      padding: 10em 1em;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -224,25 +277,31 @@ section { display: grid;
   }
 }
 
-.footer { display: flex;
+.footer {
+  display: flex;
   align-items: center;
   color: $color-base;
   padding: 1em 0;
 
-  p { margin: 0;
+  p {
+    margin: 0;
   }
 
-  .footer-logo { margin: 0 2em;
+  .footer-logo {
+    margin: 0 2em;
 
-    svg { width: 40px;
+    svg {
+      width: 40px;
 
-      .st0 { fill: none;
+      .st0 {
+        fill: none;
         stroke: $color-base-green;
         stroke-width: 40;
         stroke-miterlimit: 10;
       }
 
-      .st1 { fill: none;
+      .st1 {
+        fill: none;
         stroke: white;
         stroke-width: 40;
         stroke-miterlimit: 10;
@@ -254,12 +313,13 @@ section { display: grid;
 $color-btn-base: #74ccf4;
 $color-btn-alt: #ffd3f9;
 
-@mixin btn($color: null, $font-size: null) { padding: 0.5em 1em;
+@mixin btn($color: null, $font-size: null) {
+  padding: 0.5em 1em;
   border: 0.1em solid #74ccf4;
   color: $color-btn-base;
   text-decoration: none;
   font-weight: 400;
-  font-family: "Muli", sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: $font-size;
   text-transform: uppercase;
   border-radius: 1em;
@@ -267,9 +327,11 @@ $color-btn-alt: #ffd3f9;
   transition: 0.1s color ease-in-out;
 }
 
-.btn { @include btn(#74ccf4, 1em);
+.btn {
+  @include btn(#74ccf4, 1em);
 
-  &:hover { background-color: #74ccf4;
+  &:hover {
+    background-color: #74ccf4;
     color: $color-base;
     font-weight: 600;
   }
