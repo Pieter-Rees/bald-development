@@ -1,52 +1,65 @@
-html { font-size: 1em;
+html {
+  font-size: 1em;
 }
 
-body { font-family: "Muli", sans-serif;
+body {
+  font-family: 'Muli', sans-serif;
   font-weight: 400;
   line-height: 1.45;
   color: $color-base-black;
 }
 
-p { margin-bottom: 1.3em;
-  font-size: 1.4em;
+p {
+  margin-bottom: 1.3em;
+  font-size: 1.2em;
 }
 
-h1, h2, h3,
-h4 { margin-top: 0;
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
   margin-bottom: 1em;
   font-weight: 300;
   line-height: 1.2;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-h1 { font-size: 6.854em;
+h1 {
+  font-size: 6.854em;
 }
 
-h2 { font-size: 4.236em;
+h2 {
+  font-size: 4.236em;
 }
 
-h3 { font-size: 2.618em;
+h3 {
+  font-size: 2.618em;
 }
 
-h4 { font-size: 1.4em;
+h4 {
+  font-size: 1.4em;
 }
 
-small, .font_small { font-size: 0.618em;
+small,
+.font_small {
+  font-size: 0.618em;
 }
 
-a { color: $color-base-grey;
-  padding: 0.2em 0.5em;
+a {
+  color: $color-base-grey;
   transition: border 0.1s;
   border: 1px solid transparent;
 
-  &:hover { text-decoration: none;
+  &:hover {
+    text-decoration: none;
     color: $color-base-green;
     border: 1px solid $color-base-green;
   }
 }
 
 ul {
-
-  li { font-size: 1.4em;
+  li {
+    font-size: 1.4em;
   }
 }
