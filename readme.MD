@@ -1,5 +1,7 @@
 # Online Identity
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Pieter-Rees/bald-development.svg)](https://greenkeeper.io/)
+
 This is my online identity a.k.a. my portfolio page without projects.
 
 ## Getting Started
