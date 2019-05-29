@@ -23,7 +23,7 @@
 		"ityped": "^1.0.1",
 		"jquery": "latest",
 		"normalize.css": "^8.0.0",
-		"svg.js": "^2.6.4"
+		"svg.js": "^2.7.1"
 	},
 	"devDependencies": {
 		"babel-core": "^6.26.0",
