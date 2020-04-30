@@ -21,7 +21,7 @@
   "license": "MIT",
   "dependencies": {
     "ityped": "^1.0.1",
-    "jquery": "latest",
+    "jquery": "^3.5.0",
     "normalize.css": "^8.0.0",
     "svg.js": "^2.7.1"
   },
